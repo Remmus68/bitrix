@@ -1,9 +1,9 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Мебельная компания");
+$APPLICATION->SetTitle("SkillUp");
 ?><p>SkillUp</p>
 
-<?$APPLICATION->IncludeComponent("bitrix:news.list", "", [
+<? $APPLICATION->IncludeComponent("bitrix:news.list", "", [
     "DISPLAY_DATE" => "Y",
     "DISPLAY_NAME" => "Y",
     "DISPLAY_PICTURE" => "Y",

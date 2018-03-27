@@ -1,7 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Новости");
-?><?$APPLICATION->IncludeComponent("bitrix:news", ".default", array(
+$APPLICATION->SetTitle("Посты");
+?><?$APPLICATION->IncludeComponent("bitrix:news.list", "posts", array(
     "IBLOCK_TYPE" => "posts",
     "IBLOCK_ID" => "5",
     "NEWS_COUNT" => "5",
@@ -37,14 +37,14 @@ $APPLICATION->SetTitle("Новости");
     "USE_PERMISSIONS" => "N",
     "PREVIEW_TRUNCATE_LEN" => "",
     "LIST_ACTIVE_DATE_FORMAT" => "d.m.Y",
-    "LIST_FIELD_CODE" => array(
-        0 => "",
-        1 => "",
-    ),
+    "LIST_FIELD_CODE" => [],
     "LIST_PROPERTY_CODE" => array(
         0 => "",
         1 => "",
     ),
+    "PROPERTY_CODE" => [
+        "AUTHOR",
+    ],
     "HIDE_LINK_WHEN_NO_DETAIL" => "Y",
     "DISPLAY_NAME" => "Y",
     "META_KEYWORDS" => "-",
@@ -59,6 +59,10 @@ $APPLICATION->SetTitle("Новости");
         0 => "",
         1 => "",
     ),
+    "FIELD_CODE" => [
+        "DETAIL_PICTURE",
+    ],
+
     "DETAIL_DISPLAY_TOP_PAGER" => "N",
     "DETAIL_DISPLAY_BOTTOM_PAGER" => "Y",
     "DETAIL_PAGER_TITLE" => "Страница",
