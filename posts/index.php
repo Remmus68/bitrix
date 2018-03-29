@@ -1,7 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Посты");
-?><?$APPLICATION->IncludeComponent("bitrix:news.list", "posts", array(
+?><?$APPLICATION->IncludeComponent("skillup:news.list", "posts", array(
     "IBLOCK_TYPE" => "posts",
     "IBLOCK_ID" => "5",
     "NEWS_COUNT" => "5",

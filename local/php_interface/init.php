@@ -1,2 +1,2 @@
 <?php
-
+\CModule::IncludeModule('iblock');

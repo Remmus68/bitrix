@@ -72,21 +72,3 @@ $oAsset->addCss('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.m
     ); ?>
 
         <div class="container">
-            <div class="header">
-                <div id="logotip">
-                    <a href="/">
-                        <img src="image/logo.png" />
-                    </a>
-                </div>
-                <div class="navigator">
-                    <ul>
-                        <li><a href="#">Лента</a></li>
-                        <li><a href="#">Добавить запись</a></li>
-                        <li><a href="#">О проекте</a></li>
-                    </ul>
-                    <form id="search">
-                        <input type="text" name="request" placeholder="Поиск...">
-                        <input type="submit" value="">
-                    </form>
-                </div>
-            </div>
