@@ -1,7 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Посты");
-?><?$APPLICATION->IncludeComponent("skillup:news.list", "posts", array(
+?><?$APPLICATION->IncludeComponent("bitrix:news.list", "posts", array(
     "IBLOCK_TYPE" => "posts",
     "IBLOCK_ID" => "5",
     "NEWS_COUNT" => "5",
@@ -19,7 +19,7 @@ $APPLICATION->SetTitle("Посты");
     "SORT_ORDER2" => "ASC",
     "CHECK_DATES" => "Y",
     "SEF_MODE" => "Y",
-    "SEF_FOLDER" => "/news/",
+    "SEF_FOLDER" => "/posts/",
     "AJAX_MODE" => "N",
     "AJAX_OPTION_SHADOW" => "N",
     "AJAX_OPTION_JUMP" => "Y",

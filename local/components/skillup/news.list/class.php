@@ -17,7 +17,7 @@ class Posts extends  CBitrixComponent {
             'NAME',
             'DETAIL_PICTURE',
             'DETAIL_TEXT',
-            'PROPERTY_LIKE',
+            'PROPERTY_LIKES',
         ];
 
         $oPosts = \CIBlockElement::GetList([], $aFilter, false, false, $aSelect);
